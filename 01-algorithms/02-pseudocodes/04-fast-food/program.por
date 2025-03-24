@@ -68,7 +68,7 @@ programa {
 	    escreva("Seu pedido com: ", lancheEscolhido, " e ", bebidaEscolhida, " foi solicitado\n")
 	    escreva("Aguarde seu pedido...\n")
 	    escreva("Agradecemos a preferência!\n")
-	    escreva("++++++++++++++++++++FIM++++++++++++++++++++++\n")
+	    escreva("++++++++++++++++++++FIM++++++++++++++++++++++\n") 
 	}
 	
 	funcao inicio() {
@@ -85,8 +85,7 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 893; 
- * @DOBRAMENTO-CODIGO = [11, 17, 23, 56, 60];
+ * @POSICAO-CURSOR = 986; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
