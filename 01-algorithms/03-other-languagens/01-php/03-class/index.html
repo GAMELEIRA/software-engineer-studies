@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madeira & Cia Birthday Promotion</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <style>
+      body {font-family: 'Roboto', sans-serif; background: #f1f7ff;}
+    </style>
+  </head>
+  <body class="w3-light-blue">
+    <main class="w3-container w3-card-4 w3-round-large w3-white w3-margin-top" style="max-width: 600px; margin: 35px auto; padding: 24px;">
+      <h1 class="w3-center w3-text-blue">Promoção Madeira & Cia</h1>
+      <form action="index.php" method="post" class="w3-container">
+        <p>
+          <label class="w3-text-blue"><b>Nome do Cliente</b></label>
+          <input class="w3-input w3-border w3-round" type="text" id="clientName" name="clientName" required />
+        </p>
+
+        <p>
+          <label class="w3-text-blue"><b>Valor da Compra (R$)</b></label>
+          <input class="w3-input w3-border w3-round" type="number" id="purchaseValue" name="purchaseValue" min="0.01" step="0.01" required />
+        </p>
+
+        <p>
+          <label class="w3-text-blue"><b>Forma de Pagamento</b></label>
+          <select class="w3-select w3-border w3-round" id="paymentMethod" name="paymentMethod" required>
+            <option value="" disabled selected>Selecione...</option>
+            <option value="deposito">Depósito (10% de desconto)</option>
+            <option value="boleto">Boleto (8% de desconto)</option>
+            <option value="cartaoCredito">Cartão de Crédito (sem desconto)</option>
+          </select>
+        </p>
+
+        <div class="w3-row-padding w3-margin-top">
+          <button class="w3-button w3-blue w3-round w3-half" type="submit">Calcular</button>
+          <button class="w3-button w3-light-grey w3-border w3-round w3-half" type="reset">Limpar</button>
+        </div>
+      </form>
+
+      <div class="w3-panel w3-pale-blue w3-border-blue w3-round w3-margin-top">
+        <strong>Instruções:</strong> preencha o formulário e clique em "Calcular".
+        O resultado será exibido na página processada pelo <code>index.php</code>.
+      </div>
+    </main>
+  </body>
+</html>
